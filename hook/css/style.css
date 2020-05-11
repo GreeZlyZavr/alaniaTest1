@@ -1,0 +1,184 @@
+/*------------ Null ------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size:100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input:-ms-clear{display: none;}
+button{cursor:pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration:none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*------------ Style ------------*/
+
+.body{
+
+    background: #47b4b9 url('../img/bg/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 400 'Roboto', sans-serif;
+
+
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+
+
+
+}
+
+
+/*------------ Intro ------------*/
+
+
+.intro {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.intro__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.intro__text {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px 15px 30px;
+
+}
+
+.intro__block{
+    flex: 1 1 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.intro__link {
+
+
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+
+}
+
+.intro__link:last-child{
+
+    display: flex;
+    flex-grow: 1;
+}
+
+.intro__WhatsApp {
+    width: 100%;
+    color: #fff;
+    background: rgb(57, 219, 57);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 100px;
+}
+.intro__Viber {
+    width: 100%;
+    color: #fff;
+    background: rgb(186, 9, 240);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 100px;
+}
+.intro__online {
+    width: 100%;
+    color: #fff;
+    background: orange;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 100px;
+
+}
+
+.intro__contact{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+
+
+/*------------ Media ------------*/
+
+
+@media (max-width: 767px) {
+    .intro__block{
+    width: 100%;
+}
+
+}
+
+@media (max-height: 600px) {
+
+
+    .intro__text {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 10px 10px;
+
+}
+
+    .intro__contact{
+    font-size: 18px;
+    padding: 10px 5px;
+    }
+
+    .intro__link {
+    font-size: 20px;
+    padding: 8px 5px;
+}
+
+}
